@@ -55,10 +55,6 @@ def product_list_api(request):
         }
         dumped_products.append(dumped_product)
     return Response(dumped_products)
-    # return JsonResponse(dumped_products, safe=False, json_dumps_params={
-    #     'ensure_ascii': False,
-    #     'indent': 4,
-    # })
 
 
 def register_order(request):
